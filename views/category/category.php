@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php require_once $_SERVER['DOCUMENT_ROOT'].'/BTTH02/views/layout/category_header.php';    
+    <?php require_once $_SERVER['DOCUMENT_ROOT'].'/CSE485_2023_BTTH02/views/layout/header.php';    
 ?>
      <main class="container-fluid mt-3">
         <h3 class="text-center text-uppercase mb-3 text-primary">Các thể loại bài hát</h3>

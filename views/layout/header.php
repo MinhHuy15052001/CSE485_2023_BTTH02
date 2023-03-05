@@ -25,10 +25,10 @@
                         <a class="nav-link active" aria-current="page" href="./">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./login.php">Đăng nhập</a>
+                        <a class="nav-link" href="index.php?controller=member&action=index">Đăng nhập</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./views/category/category.php">Thể loại</a>
+                        <a class="nav-link" href="./category/category.php">Thể loại</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -39,3 +39,4 @@
         </div>
     </nav>
 </header>
+</body>
