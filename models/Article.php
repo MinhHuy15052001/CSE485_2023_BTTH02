@@ -6,13 +6,14 @@ class Article{
     private $title;
     private $summary;
     private $cat_name;
+    private $image;
 
-
-    public function __construct($id,$title, $summary,$cat_name){
+    public function __construct($id,$title, $summary,$cat_name,$image){
         $this->id= $id;
         $this->title = $title;
         $this->summary = $summary;
         $this->cat_name = $cat_name;
+        $this->image = $image;
     }
 
     // Setter và Getter
@@ -54,6 +55,15 @@ class Article{
     public function setCatName($cat_name)
     {
         $this->cat_name = $cat_name;
+    }
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    public function setImage($image)
+    {
+        $this->image = $image;
     }
 
 

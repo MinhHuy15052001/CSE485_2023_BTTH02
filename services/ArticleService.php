@@ -14,7 +14,7 @@ class ArticleService{
         // B3. Xử lý kết quả
         $articles = [];
         while($row = $stmt->fetch()){
-            $article = new Article($row['ma_bviet'],$row['tieude'], $row['tomtat'], $row['ten_bhat']);
+            $article = new Article($row['ma_bviet'],$row['tieude'], $row['tomtat'], $row['ten_bhat'], $row['hinhanh']);
             array_push($articles,$article);
         }
         // Mảng (danh sách) các đối tượng Article Model
@@ -26,7 +26,7 @@ class ArticleService{
         $conn = $dbConn->getConnection();
 
         // Truy vấn SQL
-        $sql = "SELECT tieude,ten_bhat,tomtat,noidung,theloai.ten_tloai,tacgia.ten_tgia FROM baiviet,theloai,tacgia WHERE baiviet.ma_tloai=theloai.ma_tloai AND baiviet.ma_tgia=tacgia.ma_tgia AND ma_bviet =:id";
+        $sql = "SELECT tieude,ten_bhat,tomtat,noidung,hinhanh,theloai.ten_tloai,tacgia.ten_tgia FROM baiviet,theloai,tacgia WHERE baiviet.ma_tloai=theloai.ma_tloai AND baiviet.ma_tgia=tacgia.ma_tgia AND ma_bviet =:id";
 
         //Tạo Prepared Statement
         $stmt = $conn -> prepare($sql);
@@ -34,7 +34,7 @@ class ArticleService{
         $stmt->setFetchMode(PDO::FETCH_OBJ);
         //Gán giá trị và thực thi
         $stmt->execute(array('id' => $id));
-        $row = $stmt->fetch();;
+        $row = $stmt->fetch();
         return $row;
     }
 }

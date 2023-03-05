@@ -1,4 +1,5 @@
-<?php require './views/home/header.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'].'/CSE485_2023_BTTH02/views/layout/header.php';    
+?>
 
 <form action="">
     <h3>Chi tiết Bài viết</h3>
@@ -8,7 +9,7 @@
 
     <div class="row mb-5">
         <div class="col-sm-4">
-            <img src="images/songs/cayvagio.jpg" class="img-fluid" alt="...">
+            <img src="assets/images/songs/<?= $articleDetail -> hinhanh ?>" class="img-fluid" alt="...">
         </div>
         <div class="col-sm-8">
             <h5 class="card-title mb-2">
