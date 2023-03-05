@@ -13,7 +13,7 @@
         <div class="container-fluid">
             <div class="my-logo">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo2.png" alt="" class="img-fluid">
+                    <img src="images/logo2.png" alt="" class="img-fluid">
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,10 +25,10 @@
                         <a class="nav-link active" aria-current="page" href="./">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?controller=member&action=index">Đăng nhập</a>
+                        <a class="nav-link" href="./login.php">Đăng nhập</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./category/category.php">Thể loại</a>
+                        <a class="nav-link" href="./views/category/detail_category.php">Thể loại</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -39,4 +39,3 @@
         </div>
     </nav>
 </header>
-</body>
