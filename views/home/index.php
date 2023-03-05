@@ -1,4 +1,5 @@
-<?php require 'header.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'].'/BTTH02/views/layout/header.php';
+?>
 
 <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -44,9 +45,9 @@
                                 </div>
                             </div>
                         </div>
-                <?php } ?>
-            ?>
+                <?php }?>
         </div>
     </main>
+    
 </body>
 </html>
