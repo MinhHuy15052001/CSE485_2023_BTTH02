@@ -1,4 +1,4 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'].'/BTTH02/views/layout/header.php';
+<?php require_once $_SERVER['DOCUMENT_ROOT'].'/CSE485_2023_BTTH02/views/layout/header.php';
 ?>
 
 <div id="carouselExampleIndicators" class="carousel slide">
@@ -9,13 +9,13 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/slideshow/slide01.jpg" class="d-block w-100" alt="...">
+                <img src="assets/images/slideshow/slide01.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="images/slideshow/slide02.jpg" class="d-block w-100" alt="...">
+                <img src="assets/images/slideshow/slide02.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="images/slideshow/slide03.jpg" class="d-block w-100" alt="...">
+                <img src="assets/images/slideshow/slide03.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -36,7 +36,7 @@
                 foreach($articles as $article){ ?>
                         <div class="col-sm-3">
                             <div class="card mb-2" style="width: 100%;">
-                                <img src="images/songs/cayvagio.jpg" class="card-img-top" alt="...">
+                                <img src="assets/images/songs/cayvagio.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title text-center">
                                         <a href= "index.php?controller=article&action=detail&id=<?= $article->getId()?>" class="text-decoration-none">
